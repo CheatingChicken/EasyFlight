@@ -1,0 +1,7 @@
+## Interface: 100005
+## Title: EasyFlight
+## Notes: Makes Druids cast Travel Form on double jump
+## Author: Lucibear
+## Version: 0.2
+
+EasyFlight.lua
