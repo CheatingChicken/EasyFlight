@@ -148,4 +148,4 @@ local function handleCommands(msg, editbox)
 end
 SLASH_EASYFLIGHT1 = '/easyflight'
 SlashCmdList["EASYFLIGHT"] = handleCommands
--- asdasd
+-- asdasd123
