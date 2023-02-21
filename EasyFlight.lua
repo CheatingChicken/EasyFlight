@@ -125,10 +125,9 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript("OnEvent", function(_, event, ...)
     if event == "PLAYER_ENTERING_WORLD" then
         f:UnregisterEvent("PLAYER_ENTERING_WORLD")
-        local playerLoc = PlayerLocation:CreateFromUnit("player")
-        local playerClass = C_PlayerInfo.GetClass(playerLoc)
+        local _, playerClass, _ = UnitClass("player")
 
-        if playerClass ~= "Druid" then
+        if playerClass ~= "DRUID" then
             print("You are not durid! You cannot be birb!")
             isEnabled = false
             return
