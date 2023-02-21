@@ -66,9 +66,9 @@ end
 
 local function keyHandler(_, key)
     --    print("Key press:", key)
-    if (IsMounted()) then return end
     if not IsTaintable() then
         ClearOverrideBindings(f)
+        if (IsMounted()) then return end
         if isJumpKey(key) then
             -- print("Key was space")
             local doubleClickTime = GetTime() - internal.previousPressTime
