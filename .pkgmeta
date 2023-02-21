@@ -1,1 +1,4 @@
-ignore: -.vscode    -.gitignore
+package-as: EasyFlight
+ignore:
+    - .vscode
+    - .gitignore
