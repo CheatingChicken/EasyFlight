@@ -1,5 +1,4 @@
 package-as: EasyFlight
 ignore:
     - .vscode
-    - .github
-    - ".gitignore"
+    - .github/*
