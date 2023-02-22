@@ -68,6 +68,7 @@ local function keyHandler(_, key)
     --    print("Key press:", key)
     if not IsTaintable() then
         ClearOverrideBindings(f)
+        if (IsMounted()) then return end
         if isJumpKey(key) then
             -- print("Key was space")
             local doubleClickTime = GetTime() - internal.previousPressTime
@@ -148,4 +149,4 @@ local function handleCommands(msg, editbox)
 end
 SLASH_EASYFLIGHT1 = '/easyflight'
 SlashCmdList["EASYFLIGHT"] = handleCommands
--- asdasd123
+-- asdasd
